@@ -17,15 +17,15 @@ public class Program {
         //product1.name = "A";
         System.out.println(product1.displayInfo());
 
-        Product bottleOfWater1 = new BottleOfWater("ООО Чистый источник", "Бутылка с водой [1]", 115, 1);
-        Product bottleOfWater2 = new BottleOfWater("ООО Чистый источник", "Бутылка с водой [2]", 215, 1.5);
+        BottleOfWater bottleOfWater1 = new BottleOfWater();
+        BottleOfWater bottleOfWater2 = new BottleOfWater();
 
-        BottleOfWater bottleOfWater3 = new BottleOfWater("ООО Чистый источник", "Бутылка с водой [3]", 1115, 1.5);
+        BottleOfWater bottleOfWater3 = new BottleOfWater();
 
-        Product bottleOfWater4 = new BottleOfWater("ООО Чистый источник", "Бутылка с водой [4]", 55, 2);
+        BottleOfWater bottleOfWater4 = new BottleOfWater();
 
         System.out.println(bottleOfWater1.displayInfo());
-        Product bottleOfMilk1 = new BottleOfMilk("ООО Чистый источник", "Бутылка с молоком", 115, 1.5, 10);
+        BottleOfMilk bottleOfMilk1 = new BottleOfMilk();
         System.out.println(bottleOfMilk1.displayInfo());
 
         List<Product> products = new ArrayList<>();
@@ -35,7 +35,7 @@ public class Program {
         products.add(bottleOfWater4);
         products.add(bottleOfWater3);
 
-        VendingMachine vendingMachine = new VendingMachine(products);
+        VendingMachine vendingMachine = new VendingMachine();
         BottleOfWater bottleOfWaterResult = vendingMachine.getBottleOfWater(2);
         if (bottleOfWaterResult != null){
             System.out.println("Вы купили: ");
