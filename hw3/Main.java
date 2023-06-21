@@ -18,7 +18,7 @@ public class Main {
         } else {
             int salary = r.nextInt(1000, 2001);
             int timeSheet = Main.r.nextInt(20, 30);
-            return new FreeLancer(names[r.nextInt(names.length)], surnames[r.nextInt(surnames.length)], salary, age, timeSheet);
+            return new Freelancer(names[r.nextInt(names.length)], surnames[r.nextInt(surnames.length)], salary, age, timeSheet);
         }
     }
 
