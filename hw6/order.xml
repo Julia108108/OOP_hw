@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<order>
+    <client>Vasya</client>
+    <product>Phone</product>
+    <qnt>2</qnt>
+    <price>500</price>
+</order>
